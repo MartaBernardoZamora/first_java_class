@@ -6,15 +6,13 @@ public final class App {
     
 
     public static void main(String[] args) {
-        String result;
-        Person person = new Person("Marta", "Bernardo", "11222333D", 1985);
-        result=person.completeData();
+        String result=dataToPrint("Marta", "López", "22333444F", 1990);
         System.out.println(result);
     }
 
-    public static String dataToPrint(String string, String string2, String string3, int i) {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'dataToPrint'");
+    public static String dataToPrint(String name, String surname, String document, int year) {
+        Person person = new Person(name, surname, document, year);
+        return person.completeData();
     }
 
     
