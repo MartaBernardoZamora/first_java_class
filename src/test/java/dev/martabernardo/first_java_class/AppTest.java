@@ -15,8 +15,11 @@ class AppTest {
         String result = App.dataToPrint("Marta", "Bernardo", "11222333D", 1985);
 
         assertEquals(result, "Marta Bernardo / 11222333D / 1985");
-        assertThat(result, instanceOf(App.class));
     }
-
+    @Test
+    @DisplayName("Test app functionality")
+    void testMain() {
+        App.main(new String[]{});
+    }
 
 }
