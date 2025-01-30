@@ -2,28 +2,32 @@ package dev.martabernardo.first_java_class.person;
 
 public class Person {
 
+    private String name;
+    private String surname;
+    private String document;
+    private int year;
+                    
     public Person(String name, String surname, String document, int year) {
-        //TODO Auto-generated constructor stub
+        this.name = name;
+        this.surname=surname;
+        this.document=document;
+        this.year=year;
+    } 
+
+    public String getName() {
+        return name;
     }
 
-    public Object getName() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getName'");
+    public String getSurname() {
+        return surname;
     }
 
-    public Object getSurname() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getSurname'");
-    }
-
-    public Object getDocument() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getDocument'");
+    public String getDocument() {
+        return document;
     }
 
     public Integer getYear() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'getYear'");
+        return year;
     }
 
 }
