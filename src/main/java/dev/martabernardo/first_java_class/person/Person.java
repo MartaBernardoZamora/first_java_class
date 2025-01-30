@@ -31,8 +31,7 @@ public class Person {
     }
 
     public String completeData() {
-        // TODO Auto-generated method stub
-        throw new UnsupportedOperationException("Unimplemented method 'completeData'");
+        return name + " " + surname + " / " + document + " / " + year;
     }
 
 }
