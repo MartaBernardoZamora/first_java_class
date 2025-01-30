@@ -30,4 +30,9 @@ public class Person {
         return year;
     }
 
+    public String completeData() {
+        // TODO Auto-generated method stub
+        throw new UnsupportedOperationException("Unimplemented method 'completeData'");
+    }
+
 }
