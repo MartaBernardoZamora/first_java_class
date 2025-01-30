@@ -2,6 +2,8 @@ package dev.martabernardo.first_java_class;
 
 import org.junit.jupiter.api.Test;
 
+import static org.hamcrest.MatcherAssert.assertThat;
+import static org.hamcrest.Matchers.instanceOf;
 import static org.junit.jupiter.api.Assertions.assertEquals;
 
 import org.junit.jupiter.api.DisplayName;
@@ -13,5 +15,8 @@ class AppTest {
         String result = App.dataToPrint("Marta", "Bernardo", "11222333D", 1985);
 
         assertEquals(result, "Marta Bernardo / 11222333D / 1985");
+        assertThat(result, instanceOf(App.class));
     }
+
+
 }
