@@ -14,6 +14,9 @@ class AppTest {
 
         assertEquals(result, "Marta Bernardo / 11222333D / 1985");
     }
-
-
+    @Test
+    @DisplayName("Test app functionality")
+    void testMain() {
+        App.main(new String[]{});
+    }
 }
